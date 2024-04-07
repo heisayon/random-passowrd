@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <input id="passwordLength" type="number" value="0"/>
-    <br />
-    <label for="Lowercase">Lowercase</label
-    ><input type="checkbox" id="Lowercase" />
-    <br />
-    <label for="Uppercase">Uppercase</label
-    ><input type="checkbox" id="Uppercase" />
-    <br />
-    <label for="Number">Number</label><input type="checkbox" id="Number" />
-    <br />
-    <label for="Symbol">Symbol</label> <input type="checkbox" id="Symbol" />
-    <br />
-    <button id="Enter">Enter</button>
 
-    <p id="screen"></p>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Material Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>Password Generator</h2>
+    <div class="display-input">
+      <input type="text" id="password">
+      <button class="copy-btn" onclick="copyPassword()">
+        <span class="material-symbols-rounded">
+          content_copy
+        </span>
+        <span class="copy-text">Copy</span>
+      </button>
+    </div>
+    <p class="msg">Lorem ipsum dolor sit amet.</p>
+
+    <div class="wrapper">
+      <h3>Set your preference:</h3>
+      <div class="wrap">
+        <label>Length: <input id="passwordLength" type="text" inputmode="numeric" value="0" /></label>
+        <label for="Lowercase">Lowercase: <input type="checkbox" id="Lowercase" /></label>
+        <label for="Uppercase">Uppercase: <input type="checkbox" id="Uppercase" /></label>
+        <label for="Number">Number: <input type="checkbox" id="Number" /></label>
+        <label for="Symbol">Symbol: <input type="checkbox" id="Symbol" /></label>
+      </div>
+    <button id="enter">Enter</button>
+    </div>
+
+
+    <!-- <label for="Lowercase">Lowercase</label><input type="checkbox" id="Lowercase" />
+
+    <label for="Uppercase">Uppercase</label><input type="checkbox" id="Uppercase" />
+
+    <label for="Number">Number</label><input type="checkbox" id="Number" />
+
+    <label for="Symbol">Symbol</label> <input type="checkbox" id="Symbol" /> -->
+
+    <!-- <p id="screen"></p> -->
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

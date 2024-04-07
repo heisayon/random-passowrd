@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #404040;
+    font-family: "consolas", monospace;
+}
+
+body {
+    background-color: #3cb371;
+}
+
+.container {
+    width: min(90%, 400px);
+    margin: 1rem auto;
+    background-color: #fefefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    padding: 2em 1rem;
+    border-radius: .3rem;
+}
+
+@media (max-width:400px) {
+    .container{
+        margin-top: 2em;
+    }
+}
+
+.display-input {
+    height: 45px;
+    display: flex;
+    margin: 2em 0 .5rem;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.display-input input {
+    width: 100%;
+    border: none;
+    background-color: #f0f8ff;
+    padding-left: 1rem;
+}
+
+.copy-btn {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #3cb371;
+    color: #fefefe;
+    font-size: 1rem;
+    transition: .2s;
+}
+.copy-btn:active{
+    filter: brightness(80%);
+}
+.copy-btn span{
+    color: inherit;
+}
+
+.wrapper{
+    margin-top: .5rem;
+}
+.wrapper h3{
+    margin-bottom: .5rem;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+label{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+input[type="checkbox"]{
+    accent-color: #3cb371;
+    color: #fefefe;
+}
+#passwordLength{
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #3cb371;
+    border-radius: .3rem;
+}
+
+#enter{
+    margin-top: 1rem;
+    width: 100%;
+    padding: .65rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #3cb371;
+    color: #fefefe;
+    border-radius: .3rem;
+    transition: .2s;
+}
+
+#enter:active{
+    scale: .9;
+    filter: brightness(90%);
+}
+
+.msg{
+    color: #dc143c;
+    visibility: hidden;
+    font-size: small;
+    font-weight: bold;
+}
+.msg.show{
+    visibility: visible;
+}
